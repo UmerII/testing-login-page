@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+<title>Sign Up</title>
+</head>
+<body>
+<form action="">
+    <div class="container">
+        <h1 class="text-center">Please Fill This Form For Registration</h1>
+        <input type="text" placeholder="Enter Name" id="name" class="form-control"><br>
+        <input type="text" placeholder="Enter User Name" id="user" class="form-control"><br>
+        <input type="text" placeholder="Enter Your Age" id="age" class="form-control"><br>
+        <input type="email" placeholder="Enter Your Email" id="email" class="form-control"><br>
+        <input type="password" placeholder="Enter Your Password" id="password" class="form-control"><br>
+        <button type="submit" onclick="singup()" class="btn btn-secondary">Signup</button>        
+    </div>
+</form>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+<script>
+    function signup()
+    {
+        var name = document.getElementById('name').value;
+        var user = document.getElementById('user').value;
+        var age = document.getElementById('age').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        sessionStorage.setItem("name",name);
+        sessionStorage.setItem("user",user);
+        sessionStorage.setItem("age",age);
+        sessionStorage.setItem("email",email);
+        sessionStorage.setItem("password",password);
+
+
+    }
+
+
+
+
+</script>
+</html>
